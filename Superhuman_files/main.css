@@ -3182,7 +3182,8 @@ body.background-typeform {
 }
 
 .mobile .navbar .logo h2 div,.navbar .logo h2 div {
-    font-family: "Superhuman Gotham Book";
+    /*font-family: "Superhuman Gotham Book";*/
+    font-family: "Avenir LT Std Book";
     top: 5px;
     letter-spacing: .277em;
     -webkit-font-smoothing: antialiased;
