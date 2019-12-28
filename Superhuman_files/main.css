@@ -4525,7 +4525,8 @@ body.background-typeform {
 }
 
 .index-page .down-arrow {
-    background-image: url(/build/4e5e228b6e8353b0e4c19081c9419545.down-arrow-16x16.png);
+    /*background-image: url(/build/4e5e228b6e8353b0e4c19081c9419545.down-arrow-16x16.png);*/
+    background-image: url(./down_arrow.png);
     background-size: 19px;
     background-position: center;
     background-repeat: no-repeat;
