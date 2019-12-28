@@ -4654,7 +4654,8 @@ body.background-typeform {
 
 .visually-gorgeous .background {
     min-height: 804px;
-    background-image: url(/build/6639f47936e212c1d4c226985d3f7c8e.visually-gorgeous.jpg)
+    /*background-image: url(/build/6639f47936e212c1d4c226985d3f7c8e.visually-gorgeous.jpg)*/
+    background-image: url(./imgs/oski_creepy.png)
 }
 
 @media (max-width:767px) {
@@ -5012,7 +5013,7 @@ body.background-typeform {
 }
 
 .quotes.quotes-1 .quote-1 .image {
-    background-image: url(/build/54aa283b62484e1003505447ee1a4400.jager.jpg);
+    background-image: url(./imgs/mother.jpg);
     filter: saturate(80%);
     -webkit-filter: saturate(80%);
     -moz-filter: saturate(80%);
@@ -5040,7 +5041,7 @@ body.background-typeform {
 }
 
 .quotes.quotes-1 .quote-2 .image {
-    background-image: url(/build/a053929ce96ae95c2a1bea23ad1bb1ed.camille.jpg);
+    background-image: url(./imgs/christ.jpeg);
     filter: saturate(65%);
     -webkit-filter: saturate(65%);
     -moz-filter: saturate(65%);
