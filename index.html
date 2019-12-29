@@ -9,10 +9,12 @@
 <meta name="description" content="Made by and made for Berkeley students">
 <meta name="author" content="">
 
+<meta property="fb:app_id" content="588922198553711">
+
 <!-- Open Graph -->
 <meta property="og:title" content="Berkeley Marriage Pact">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://berkeleymarriagepact.com/">
+<meta property="og:url" content="http://berkeleymarriagepact.com/">
 <meta property="og:image" content="https://dangeng.github.io/BerkeleyMarriagePactWebsite/assets/imgs/oski_trans.png">
 <meta property="og:description" content="Made by and made for Berkeley students. Find your other half. Take the survey at berkeleymarriagepact.com">
 <meta property="og:site_name" content="Berkeley Marriage Pact">
@@ -23,6 +25,24 @@
 <meta itemprop="description" content="Made by and made for Berkeley students. Find your other half. Take the survey at berkeleymarriagepact.com">
 <meta itemprop="thumbnailUrl" content="https://dangeng.github.io/BerkeleyMarriagePactWebsite/assets/imgs/thumbnail.png">
 <meta itemprop="image" content="https://dangeng.github.io/BerkeleyMarriagePactWebsite/assets/imgs/oski_trans.png">
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '588922198553711',
+      xfbml      : true,
+      version    : 'v2.0'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
 
 <!-- Other -->
 <link rel="image_src" href="https://dangeng.github.io/BerkeleyMarriagePactWebsite/assets/imgs/oski_trans.png">
@@ -56,16 +76,16 @@
                   <div><strong>Berkeley Marriage Pact</strong></div>
               </h2>
             </div>
-            <div class="col-xs-5 navbar-mobile-links">
+            <a class="col-xs-5 navbar-mobile-links" href="https://www.google.com">
               <div data-selector="signup-button" class="button">
                 <div>Take Survey</div>
               </div>
-            </div>
-            <div class="col-xs-5 col-lg-3 navbar-desktop-links">
+            </a>
+            <a class="col-xs-5 col-lg-3 navbar-desktop-links" href="https://www.google.com">
               <div class="button">
                 <div>Take Survey</div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </nav>
