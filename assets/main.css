@@ -6203,7 +6203,7 @@ body.background-typeform {
 }
 
 .two-up {
-    min-height: 720px;
+    min-height: 550px;
     position: relative
 }
 
@@ -6224,7 +6224,7 @@ body.background-typeform {
 }
 
 .two-up .overlay {
-    min-height: 720px;
+    min-height: 550px;
     background: rgba(22,22,22,.7)
 }
 
@@ -7356,4 +7356,10 @@ body.crossFade-to-product,body.crossFade-to-typeform {
 
 body.roles {
     background: #fff
+}
+
+/* Reverse email address */
+span.rev {
+  unicode-bidi: bidi-override;
+  direction: rtl;
 }
