@@ -1,1 +1,308 @@
-it's true
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Berkeley Marriage Pact - Data Analysis &middot; Lanyon
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
+</head>
+
+
+  <body>
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead" style="border-bottom: 0px">
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  <h1 class="post-title">Berkeley Marriage Pact - Data Analysis</h1>
+  <span class="post-date">25 Feb 2020</span>
+  <h2 id="the-berkeley-marriage-pact">The Berkeley Marriage Pact</h2>
+
+<p>Tinder, at least it seems to me, operates on perverse incentives. Take two Tinder users who are matched together. They go on a date together, sparks fly, and love blossoms. They start dating, get married, and never open Tinder again. Years pass and the app is eventually uninstalled. In their success lies Tinder’s loss.</p>
+
+<p>The true optimal strategy for Tinder and other dating apps is to keep users swiping for as long as possible. Feed users matches who are <em>almost</em> compatible. Keep them crawling back to shoot their shot. Keep them pulling on the lever of the slot machine.</p>
+
+<p>At least, this was the thesis on which the Berkeley Marriage Pact was built. The idea was simple. Write a survey, have Berkeley students take it, and match people based on survey responses. And unlike dating apps, we have no ulterior motive. Our sole goal was to maximize the number of relationships.</p>
+
+<p>All in all, we had more than 3,000 responses, of which about 2500 confirmed their emails. In the end we made about 1300 matches. While the success of these matches are still not clear, we would like to present some interesting findings from our data.</p>
+
+<h2 id="table-of-contents">Table of Contents</h2>
+
+<p>If you’re too lazy to read everything, I suggest the “Are you smarter than the Average Bear?” section:</p>
+
+<ul>
+  <li><a href="#data">The Data</a></li>
+  <li><a href="#innocence">Loss of Innocence</a></li>
+  <li><a href="#sex">Sex, Sexuality, and Sexual Partners</a></li>
+  <li><a href="#politics">Political Affiliation</a></li>
+  <li><a href="#health">Health and Lifestyle</a></li>
+  <li><a href="#email">Email Length</a></li>
+  <li><a href="#smarter">Are you smarter than the Average Bear?</a></li>
+</ul>
+
+<h2 id="data">The Data</h2>
+
+<p>We asked 43 questions, ranging from “religious affiliation” to “boba consumption.” All data revealed in this post will be in aggregate and no individual data should be recoverable. If you have any concerns please let us know <a href="mailto:berkeleymarriagepact@gmail.com" target="_blank">through email</a>.</p>
+
+<div align="middle">
+<img src="/public/imgs/tsne.png" align="middle" width="600px" />
+<figcaption align="middle">t-SNE visualization of survey responses. <a href="https://distill.pub/2016/misread-tsne/" target="_blank">We honestly have no idea what the clusters are.</a></figcaption>
+</div>
+
+<hr />
+
+<h2 id="innocence">Loss of Innocence</h2>
+
+<blockquote>
+  <p>“If a body meet a body coming through the rye”</p>
+
+  <p>– Rabbie Burns, “Comin thro’ the Rye”</p>
+</blockquote>
+
+<p>It’s not entirely surprising that there is a loss of innocence as people age through college, although it’s mildly interesting that we are able to quantify and graph this loss of innocence.</p>
+
+<p>Let’s start with the sexual stuff:</p>
+
+<div align="middle">
+<img src="/public/imgs/innocence/num_sexual_year.png" align="middle" width="600px" />
+</div>
+
+<div align="middle">
+<img src="/public/imgs/innocence/adventurousness_year.png" align="middle" width="600px" />
+</div>
+
+<div align="middle">
+<img src="/public/imgs/innocence/num_dates_year.png" align="middle" width="600px" />
+</div>
+
+<p>So all in all, people have had more sexual partners, become more sexually adventurous, and get more desperate as they grow older. It’s probably as good a time as any to point out that the error bars capture a 95% confidence interval.</p>
+
+<h3 id="substance-abuse">Substance Abuse</h3>
+
+<p>We can also take a look at various substances that people put in their bodies:</p>
+
+<div align="middle">
+<img src="/public/imgs/innocence/alc_choice_year.png" align="middle" width="600px" />
+</div>
+
+<p>It’s interesting to note that vodka preference drops drastically with age. Perhaps fueled by the <em>“omg I fucking love to drink, vodka is my favorite, I’m so cool”</em> to <em>“holy shit I’m literally just guzzling industrial grade solvents what am I doing with my life”</em> transition that most people go through.</p>
+
+<div align="middle">
+<img src="/public/imgs/innocence/marijuana_year.png" align="middle" width="600px" />
+</div>
+
+<div align="middle">
+<img src="/public/imgs/innocence/boba_year.png" align="middle" width="600px" />
+</div>
+
+<p>It’s also interesting how boba consumption drops off as well, perhaps because seniors have finally come to terms with the fact that they can’t put just anything in to their bodies. In a similar vein, it seems that people actually live healthier lifestyles as they age:</p>
+
+<div align="middle">
+<img src="/public/imgs/innocence/exercise_year.png" align="middle" width="600px" />
+</div>
+
+<p>As a side note, while these differences are seem small you have to remember that it’s really the error bars that tell the story. While the shift in absolute days of exercise is small the error bars show that this shift is statistically significant.</p>
+
+<p>Finally, perhaps the saddest graph in the section, we see Berkeley slowly crushing the intellectual curiosity and academic vitality out of her students:</p>
+
+<div align="middle">
+<img src="/public/imgs/innocence/academics_year.png" align="middle" width="600px" />
+</div>
+
+<hr />
+
+<h2 id="sex">Sex, Sexuality, and Sexual Partners</h2>
+
+<blockquote>
+  <p>“He toss my salad like his name Romaine”</p>
+
+  <p>– Nicki Minaj, “Anaconda”</p>
+</blockquote>
+
+<p>My lawyers advised me not to say too much in this section, so here are some barplots:</p>
+
+<div align="middle">
+<img src="/public/imgs/sex/num_sexual_gender.png" align="middle" width="600px" />
+</div>
+
+<p>And the distributions for male and female:</p>
+
+<div align="middle">
+<img src="/public/imgs/sex/num_sexual_gender_hist.png" align="middle" width="600px" />
+</div>
+
+<p><br /></p>
+
+<p>More barplots:</p>
+
+<p><br /></p>
+
+<div align="middle">
+<img src="/public/imgs/sex/num_sexual_race.png" align="middle" width="600px" />
+</div>
+
+<p><br /></p>
+
+<div align="middle">
+<img src="/public/imgs/sex/num_sexual_religion.png" align="middle" width="600px" />
+</div>
+
+<p><br /></p>
+
+<div align="middle">
+<img src="/public/imgs/sex/num_sexual_sexuality.png" align="middle" width="600px" />
+</div>
+
+<p><br /></p>
+
+<p>This is probably one of my favorite plots here:</p>
+
+<div align="middle">
+<img src="/public/imgs/sex/num_sexual_political.png" align="middle" width="600px" />
+</div>
+
+<p>Look at how beautiful this U-shape is. The underlying mechanism here is probably that politically extreme people are also extreme in other parts of their lives.</p>
+
+<hr />
+
+<h2 id="politics">Political Affiliation</h2>
+
+<blockquote>
+  <p>“the night wind hammering about their siren scream and their mighty metal thunder!”</p>
+
+  <p>– Ray Bradbury, “Fahrenheit 451”</p>
+</blockquote>
+
+<p>This is the part of the post where we simultaneously marvel at how the right basically writes our jokes for us and try not to be featured on “Fox and Friends”</p>
+
+<div align="middle">
+<img src="/public/imgs/politics/academics_political.png" align="middle" width="600px" />
+</div>
+
+<div align="middle">
+<img src="/public/imgs/politics/num_children_political.png" align="middle" width="600px" />
+</div>
+
+<div align="middle">
+<img src="/public/imgs/politics/num_dates_political.png" align="middle" width="600px" />
+</div>
+
+<hr />
+
+<h2 id="health">Health and Lifestyle</h2>
+
+<blockquote>
+  <p>“But if snow is like skin: it pulls away, so easy, dragged from the body / What if all stripped wood is branches and all frozen lakes are water?”</p>
+
+  <p>– Jordaan Mason, “Avalanches”</p>
+</blockquote>
+
+<p>Berkeley students are surprisingly healthy:</p>
+
+<div align="middle">
+<img src="/public/imgs/health/exercise.png" align="middle" width="600px" />
+</div>
+
+<div align="middle">
+<img src="/public/imgs/health/boba.png" align="middle" width="600px" />
+</div>
+
+<hr />
+
+<h2 id="email">Email Length</h2>
+
+<p>We can also do something stupid, like plot the distribution of email lengths:</p>
+
+<div align="middle">
+<img src="/public/imgs/emails/length.png" align="middle" width="600px" />
+</div>
+
+<p>You can actually squeeze some interesting graphs out of this data, such as plotting against procrastination tendency:</p>
+
+<div align="middle">
+<img src="/public/imgs/emails/procrastination.png" align="middle" width="600px" />
+</div>
+
+<p>I’m not entirely sure the results here are even close to significant enough, but it seems that people who procrastinate more are lazier and don’t want to spend time typing a long email.</p>
+
+<hr />
+
+<h2 id="smarter">Are you Smarter than the Average Bear?</h2>
+
+<blockquote>
+  <p>“I’m smarter than the av-er-age bear!”</p>
+
+  <p>– Yogi Bear</p>
+</blockquote>
+
+<p>The last question we asked was “Are you smarter than the average (Cal) Bear?” 46.2% of people responded yes to this question, but things start to get interesting when you breakdown the results by other categories. For example, let’s start with gender:</p>
+
+<div align="middle">
+<img src="/public/imgs/smarter/smarter_gender.png" align="middle" width="600px" />
+</div>
+
+<p>60% of men say they are smarter, while only 30% of women think they are smarter than average. The difference is stark. The percentages are even worse if we look at race:</p>
+
+<div align="middle">
+<img src="/public/imgs/smarter/smarter_race.png" align="middle" width="600px" />
+</div>
+
+<p>On a lighter note it seems that fish-people are for some strange reason very confident:</p>
+
+<div align="middle">
+<img src="/public/imgs/smarter/smarter_pet.png" align="middle" width="600px" />
+</div>
+
+<p>Finally, if we break the data down by “Perceived importance of academics” we get an interesting Dunning-Kruger-esque trend:</p>
+
+<div align="middle">
+<img src="/public/imgs/smarter/smarter_academics.png" align="middle" width="600px" />
+</div>
+
+<p>it seems that the more important academics are to you, the stupider you think you are.</p>
+
+</div>
+
+<!--
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+  </ul>
+</div>
+-->
+
+      </div>
+    </div>
+
+  </body>
+</html>
