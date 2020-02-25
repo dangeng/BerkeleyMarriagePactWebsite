@@ -52,9 +52,20 @@
 
 <p>All in all, we had more than 3,000 responses, of which about 2500 confirmed their emails. In the end we made about 1300 matches. While the success of these matches are still not clear, we would like to present some interesting findings from our data.</p>
 
-<h2 id="table-of-contents">Table of Contents</h2>
+<h2 id="tldr">TL;DR</h2>
 
-<p>If you’re too lazy to read everything, I suggest the “Are you smarter than the Average Bear?” section:</p>
+<p>If you’re too lazy to read everything, I’ve organized the parts of this post that absolutely scintillate into clickbait titles for your enjoyment:</p>
+
+<ul>
+  <li><a href="#smarter">Only 30% of women, 26% of Hispanics, and 27% of Blacks think they are smarter than average. 60% of men think they are smarter than average.</a></li>
+  <li>A <a href="#depressed">permanently</a> <a href="#dunning">depressed</a> portion of Berkeley.</li>
+  <li><a href="#extreme">The more extreme your political views, the more extreme your sex life.</a></li>
+  <li><a href="#choice">Choice of Alcohol.</a></li>
+  <li><a href="#sex">Sex.</a></li>
+  <li><a href="#politics">The part where we laugh at the Right.</a></li>
+</ul>
+
+<h2 id="table-of-contents">Table of Contents</h2>
 
 <ul>
   <li><a href="#data">The Data</a></li>
@@ -107,6 +118,7 @@
 
 <h3 id="substance-abuse">Substance Abuse</h3>
 
+<div id="choice"></div>
 <p>We can also take a look at various substances that people put in their bodies:</p>
 
 <div align="middle">
@@ -149,7 +161,7 @@
   <p>– Nicki Minaj, “Anaconda”</p>
 </blockquote>
 
-<p>My lawyers advised me not to say too much in this section, so here are some barplots:</p>
+<p>My lawyers advised me not to say too much in this section, so here are some box and whisker plots (here the whiskers represent the first and fourth quartile of the data and outliers have been removed):</p>
 
 <div align="middle">
 <img src="/public/imgs/sex/num_sexual_gender.png" align="middle" width="600px" />
@@ -163,7 +175,7 @@
 
 <p><br /></p>
 
-<p>More box and whisker plots (here the whiskers represent the first and fourth quartile of the data):</p>
+<p>More boxplots:</p>
 
 <p><br /></p>
 
@@ -185,13 +197,17 @@
 
 <p><br /></p>
 
-<p>This is also pretty interesting:</p>
+<div id="depressed"></div>
+<p>If we plot out “number of sexual partners” against “importance of academics” we get an interesting trend:</p>
 
 <div align="middle">
 <img src="/public/imgs/sex/academics_num_sexual.png" align="middle" width="600px" />
 </div>
 
-<p>This is probably one of my favorite plots here:</p>
+<p>It’s sort of sad to see that there seems to be a rather depressed portion of Berkeley students that are not only apathetic towards academics, but can’t get any sex either. You would think the relationship should be the other way around (students that don’t care about academics should have boat-loads of sex), and this is true except for the students who just don’t care about academics at all.</p>
+
+<div id="extreme"></div>
+<p>This is probably one of my favorite plots:</p>
 
 <div align="middle">
 <img src="/public/imgs/sex/num_sexual_political.png" align="middle" width="600px" />
@@ -209,7 +225,7 @@
   <p>– Ray Bradbury, “Fahrenheit 451”</p>
 </blockquote>
 
-<p>This is the part of the post where we simultaneously marvel at how the right basically writes our jokes for us and try not to be featured on “Fox and Friends”</p>
+<p>This is the part of the post where we simultaneously marvel at how the Right basically writes our jokes for us and try not to be featured on “Fox and Friends.”</p>
 
 <div align="middle">
 <img src="/public/imgs/politics/academics_political.png" align="middle" width="600px" />
@@ -271,7 +287,7 @@
   <p>– Yogi Bear</p>
 </blockquote>
 
-<p>The last question we asked was “Are you smarter than the average (Cal) Bear?” 46.2% of people responded yes to this question, but things start to get interesting when you breakdown the results by other categories. For example, let’s start with gender:</p>
+<p>The last question we asked was “Are you smarter than the average (Cal) Bear?” 46.2% of people responded yes to this question, but things start to get interesting when you breakdown the results by other categories. For example, let’s start with gender. We plot the proportion of people that answered “yes” to the question:</p>
 
 <div align="middle">
 <img src="/public/imgs/smarter/smarter_gender.png" align="middle" width="600px" />
@@ -289,13 +305,14 @@
 <img src="/public/imgs/smarter/smarter_pet.png" align="middle" width="600px" />
 </div>
 
+<div id="dunning"></div>
 <p>Finally, if we break the data down by “Perceived importance of academics” we get an interesting Dunning-Kruger-esque trend:</p>
 
 <div align="middle">
 <img src="/public/imgs/smarter/smarter_academics.png" align="middle" width="600px" />
 </div>
 
-<p>it seems that the more important academics are to you, the stupider you think you are.</p>
+<p>it seems that the more important academics are to you, the stupider you think you are. We also again see the trend where the people who care the least about academics are also the least confident.</p>
 
 </div>
 
