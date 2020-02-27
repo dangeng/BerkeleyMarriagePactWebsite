@@ -52,20 +52,21 @@
       <div class="container content">
         <div class="post">
   <h1 class="post-title">Berkeley Marriage Pact - Data Analysis</h1>
+  <span class="post-date">By: Daniel Geng</span>
   <span class="post-date">25 Feb 2020</span>
   <h2 id="the-berkeley-marriage-pact">The Berkeley Marriage Pact</h2>
 
-<p>Tinder, at least it seems to me, operates on perverse incentives. Take two Tinder users who are matched together. They go on a date together, sparks fly, and love blossoms. They start dating, get married, and never open Tinder again. Years pass and the app is eventually uninstalled. In their success lies Tinder’s loss.</p>
+<p>Dating apps, at least it seems to me, operates on perverse incentives. Take two Tinder users who are matched together. They go on a date together, sparks fly, and love blossoms. They start dating, get married, and never open Tinder again. Years pass and the app is eventually uninstalled. In their success lies Tinder’s loss.</p>
 
 <p>The true optimal strategy for Tinder and other dating apps is to keep users swiping for as long as possible. Feed users matches who are <em>almost</em> compatible. Keep them crawling back to shoot their shot. Keep them pulling on the lever of the slot machine.</p>
 
 <p>At least, this was the thesis on which the Berkeley Marriage Pact was built. The idea was simple. Write a survey, have Berkeley students take it, and match people based on survey responses. And unlike dating apps, we have no ulterior motive. Our sole goal was to maximize the number of relationships.</p>
 
-<p>All in all, we had more than 3,000 responses, of which about 2500 confirmed their emails. In the end we made about 1300 matches. While the success of these matches are still not clear, we would like to present some interesting findings from our data.</p>
+<p>All in all, we had more than 3,000 responses, of which about 2500 confirmed their emails. In the end we made about 1300 matches. While the success of these matches is still not clear, we would like to present some interesting findings from the data.</p>
 
 <h2 id="tldr">TL;DR</h2>
 
-<p>If you are too lazy to read everything, I’ve organized the parts of this post that absolutely scintillate into clickbait titles for your enjoyment:</p>
+<p>If you’re too lazy to read everything, I’ve organized the parts of this post that absolutely scintillate into clickbait titles for your enjoyment:</p>
 
 <ul>
   <li><a href="#smarter">Only 30% of women, 26% of Hispanics, and 27% of Blacks think they are smarter than average. 60% of men think they are smarter than average.</a></li>
@@ -97,7 +98,7 @@
 
 <div align="middle">
 <img src="/public/imgs/tsne.png" align="middle" width="600px" />
-<figcaption align="middle">t-SNE visualization of survey responses. <a href="https://distill.pub/2016/misread-tsne/" target="_blank">We honestly have no idea what the clusters are.</a></figcaption>
+<figcaption align="middle">t-SNE visualization of survey responses. <a href="https://distill.pub/2016/misread-tsne/" target="_blank">We honestly have no idea what the clusters mean.</a></figcaption>
 </div>
 
 <hr />
@@ -110,7 +111,7 @@
   <p>– Rabbie Burns, “Comin thro’ the Rye”</p>
 </blockquote>
 
-<p>It’s not entirely surprising that there is a loss of innocence as people age through college, although it’s mildly interesting that we are able to quantify and graph this loss of innocence.</p>
+<p>It’s not entirely surprising that there is a loss of innocence as people go through college, although it’s mildly interesting that we are able to quantify and graph this loss of innocence.</p>
 
 <p>Let’s start with the sexual stuff:</p>
 
@@ -128,9 +129,9 @@
 
 <p>So all in all, people have had more sexual partners, become more sexually adventurous, and get more desperate as they grow older. It’s probably as good a time as any to point out that the error bars capture a 95% confidence interval.</p>
 
+<div id="choice"></div>
 <h3 id="substance-abuse">Substance Abuse</h3>
 
-<div id="choice"></div>
 <p>We can also take a look at various substances that people put in their bodies:</p>
 
 <div align="middle">
@@ -139,7 +140,7 @@
 
 <p>It’s interesting to note that vodka preference drops drastically with age. Perhaps fueled by the <em>“omg I fucking love to drink, vodka is my favorite, I’m so cool”</em> to <em>“holy shit I’m literally just guzzling industrial grade solvents what am I doing with my life”</em> transition that most people go through.</p>
 
-<p>I also like how “Wine” peaks in Junior year and “Beer” just keeps rising, like you go from <em>“I love vodka”</em> to <em>“I’m fancy as fuck”</em> to <em>“I just don’t care anymore”</em>.</p>
+<p>I also like how “Wine” peaks in Junior year and “Beer” just keeps rising, as if people go from <em>“I love vodka”</em> to <em>“I’m fancy as fuck”</em> to <em>“I just don’t care anymore”</em>.</p>
 
 <div align="middle">
 <img src="/public/imgs/innocence/marijuana_year.png" align="middle" width="600px" />
@@ -155,9 +156,9 @@
 <img src="/public/imgs/innocence/exercise_year.png" align="middle" width="600px" />
 </div>
 
-<p>As a side note, while these differences seem small you have to remember that it’s really the error bars that tell the story. While the shift in absolute days of exercise is small the error bars show that this shift is statistically significant.</p>
+<p>As a side note, while these differences seem small you have to remember that it’s really the error bars that tell the story. While the increase in absolute days of exercise is small the error bars show that this increase <em>is</em> statistically significant.</p>
 
-<p>Finally, perhaps the saddest graph in the section, we see Berkeley slowly crushing the intellectual curiosity and academic vitality out of her students:</p>
+<p>Finally, perhaps the saddest graph in the section, we see Berkeley slowly crushing the intellectual curiosity and academic vitality out of her students. Or at least seniors just care about things a whole lot less:</p>
 
 <div align="middle">
 <img src="/public/imgs/innocence/academics_year.png" align="middle" width="600px" />
@@ -281,7 +282,7 @@
   <p>– Yogi Bear</p>
 </blockquote>
 
-<p>The last question we asked was “Are you smarter than the average (Cal) Bear?” 46.2% of people responded yes to this question, but things start to get interesting when you breakdown the results by other categories. For example, let’s start with gender. We plot the proportion of people that answered “yes” to the question:</p>
+<p>The last question we asked was “Are you smarter than the average (Cal) Bear?” 46.2% of people responded yes to this question, but things start to get interesting when you break down the results by other categories. For example, let’s start with gender. We plot the proportion of people that answered “yes” to the question:</p>
 
 <div align="middle">
 <img src="/public/imgs/smarter/smarter_gender.png" align="middle" width="600px" />
